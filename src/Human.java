@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class Human {
     public String name;
@@ -45,7 +46,7 @@ public class Human {
     }
     public void showElements(){
         String birthday = this.birthday.toString();
-        String habits = this.pet.habits.toString();
+        String habits = Arrays.toString(this.pet.habits);
         String result = String.format("Human={name=%s, surname=%s," +
                 " year=%s, iq=%d, mother=%s," +
                 " father=%s," +

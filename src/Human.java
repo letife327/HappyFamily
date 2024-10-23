@@ -43,5 +43,15 @@ public class Human {
         String message = pet.trickLevel>50? "very sly":" almost not sly";
         return String.format("I have a %s, he is %s years old,he is %s ",pet.species,pet.age,message);
     }
+    public void showElements(){
+        String birthday = this.birthday.toString();
+        String habits = this.pet.habits.toString();
+        String result = String.format("Human={name=%s, surname=%s," +
+                " year=%s, iq=%d, mother=%s," +
+                " father=%s," +
+                " pet={nickname=%s," +
+                " age=%d, trickLevel=%d, habits=%s}}",name,surname,birthday,iQ,mother.name,father.name,pet.nickname,pet.age,pet.trickLevel,habits);
+        System.out.println(result);
+    }
 
 }

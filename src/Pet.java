@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Pet {
     public String species;
     public String nickname;
@@ -29,5 +31,11 @@ public class Pet {
 
     public void foul() {
         System.out.println("I need to cover it up");
+    }
+
+    public void showElements() {
+        String arr = Arrays.toString(habits);
+        String result = String.format("Pet = {nickname=%s, age=%d, trickLevel=%d, habits=%s, species = %s}", nickname, age, trickLevel, arr,species);
+        System.out.println(result);
     }
 }

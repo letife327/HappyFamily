@@ -15,7 +15,7 @@ public class Main {
         Pet pet1 = new Pet("cat", "masi",
                 1, 75,
                 new String[]{"drinking", "eating", "sleeping"});
-
+        pet1.showElements();
 
 //        About Humans bos konstruktor
 //        Human human1 = new Human();
@@ -63,13 +63,13 @@ public class Main {
                 LocalDate.of(2000,3,6),
                 75,pet1,schedule,mother,father);
 
-
-        System.out.println(mother.name);
-        System.out.println(father.name);
-        System.out.println(human1.schedule[2][2]);
-        System.out.println(human1.pet.nickname);
-        System.out.println(human1.pet.age);
-        System.out.println(human1.describePet());
+        human1.showElements();
+//        System.out.println(mother.name);
+//        System.out.println(father.name);
+//        System.out.println(human1.schedule[2][2]);
+//        System.out.println(human1.pet.nickname);
+//        System.out.println(human1.pet.age);
+//        System.out.println(human1.describePet());
 
     }
 
